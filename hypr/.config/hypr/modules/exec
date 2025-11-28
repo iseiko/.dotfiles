@@ -1,0 +1,4 @@
+exec-once = swww-daemon
+exec-once = systemctl --user start hyprpolkitagent
+exec = gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'
+exec = gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
