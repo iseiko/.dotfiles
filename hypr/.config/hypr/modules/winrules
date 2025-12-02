@@ -1,0 +1,5 @@
+# Steam #
+windowrule = float, class:steam, title:Friends List
+windowrule = center 1, class:steam, title:Friends List
+windowrule = float, class:steam, title:Steam Settings
+windowrule = center, class:steam, title:Steam Settings

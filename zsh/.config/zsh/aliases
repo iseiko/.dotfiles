@@ -4,3 +4,7 @@ alias q=exit
 alias c=clear
 alias s=sudo
 alias n=nano
+alias p='pipes.sh -C'
+alias t='tty-clock -c -c -C 7'
+alias cav='cava -p ~/.dotfiles/cava/config'
+alias shut='shutdown now'

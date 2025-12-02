@@ -9,6 +9,8 @@ env = QT_QPA_PLATFORM,wayland;xcb
 env = QT_WAYLAND_DISABLE_WINDOWDECORATION,1
 env = QT_QPA_PLATFORMTHEME,qt5ct
 
-env = XCURSOR_SIZE,24
+env = HYPRCURSOR_THEME,rose-pine-hyprcursor
+env = HYPRCURSOR_SIZE,28
 
 env = GTK_CSD,0
+
