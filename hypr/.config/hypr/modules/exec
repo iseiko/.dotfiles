@@ -1,3 +1,5 @@
+exec-once = hypridle
+exec-once = waybar
 exec-once = swww-daemon
 exec-once = systemctl --user start hyprpolkitagent
 exec = gsettings set org.gnome.desktop.interface gtk-theme 'Orchis-Dark'

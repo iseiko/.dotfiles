@@ -1,10 +1,12 @@
 alias ls='eza -lah --icons=auto --no-permissions --git --no-filesize --no-user --group-directories-first --grid'
+alias rns='sudo pacman -Rns'
+alias config='code ~/.dotfiles/hypr/.config/hypr/hyprland.conf'
 alias unstow='stow -D'
 alias q=exit
 alias c=clear
 alias s=sudo
 alias n=nano
-alias p='pipes.sh -C'
-alias t='tty-clock -c -c -C 7'
-alias cav='cava -p ~/.dotfiles/cava/config'
+alias pipes='pipes.sh -c 4'
+alias tty='tty-clock -c -c -C 4'
+alias cava='cava -p ~/.dotfiles/cava/config'
 alias shut='shutdown now'

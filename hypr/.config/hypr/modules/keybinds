@@ -1,9 +1,10 @@
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
 
+bind = SUPER, L, exec, hyprlock
 bind = SUPER, R, exec, killall -SIGUSR2 waybar
 bind = SUPER, O, exec, killall waybar || waybar
-bind = SUPER, I, exec, ~/.dotfiles/.config/scripts/change_wallpaper.sh
+bind = SUPER, I, exec, ~/.config/scripts/change_wallpaper.sh
 bind = SUPER, M, exit,
 bind = SUPER, Q, killactive
 bind = SUPER SHIFT, Q, exec, hyprctl kill
@@ -51,3 +52,7 @@ bind = SUPER SHIFT, 9, movetoworkspacesilent, 9
 bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
 
 
+## MONITOR CONFIG ##
+
+bind = SUPER, N, exec, hyprctl keyword monitor "HDMI-A-1, mirror, DP-1"
+bind = SUPER SHIFT, N, exec, hyprctl keyword monitor "HDMI-A-1, 1280x720@60.00000"
