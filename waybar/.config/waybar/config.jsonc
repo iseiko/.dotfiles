@@ -102,7 +102,7 @@
         //"format": "{ifname}",
         //"format-wifi": " U {bandwidthUpBytes} D {bandwidthDownBytes}",
         //"format-ethernet": " U {bandwidthUpBytes} D {bandwidthDownBytes}", 
-        "format": "{essid}   {icon}   {signalStrength}%",
+        "format": "{essid}  {icon} {signalStrength}%",
         "format-disconnected": "󰌙",
         "tooltip-format": " U {bandwidthUpBytes} D {bandwidthDownBytes}",
         "format-linked": "󰈁 {ifname} (No IP)",
@@ -121,7 +121,7 @@
     },
     "custom/notification": {
         "tooltip": false,
-        "format": "{icon}",
+        "format": " {icon}",
         "format-icons": {
             "notification": "<span foreground='red'><sup></sup></span> ",
             "none": " ",
@@ -140,12 +140,13 @@
         "escape": true
     },
     "pulseaudio": {
-        "format": "{icon}     {volume}%",
+        "format": "{icon} {volume}%",
         //"format-bluetooth": "{icon} 󰂰 {volume}%",
         "format-muted": "󰖁",
         "on-click": "flatpak run com.saivert.pwvucontrol",
-        "on-scroll-up": "wpctl set-volume 59 1%+",
-        "on-scroll-down": "wpctl set-volume 59 1%-",
+        "on-click-right": "playerctl play-pause",
+        // "on-scroll-up": "wpctl set-volume 59 1%+",
+        // "on-scroll-down": "wpctl set-volume 59 1%-",
         "format-icons": {
             //"headphone": "",
             //"hands-free": "",
