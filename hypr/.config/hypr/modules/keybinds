@@ -6,15 +6,16 @@ bindm = SUPER, mouse:273, resizewindow
 #-- SYSTEM BINDS --#
 
 bind = SUPER, L, exec, hyprlock
-bind = SUPER, R, exec, killall -SIGUSR2 waybar
+bind = SUPER, R, exec, killall -SIGUSR2 waybar && swaync-client --reload-config && swaync-client --reload-css
 bind = SUPER, O, exec, killall waybar || waybar
 bind = SUPER, I, exec, ~/.config/scripts/change_wallpaper.sh
-bind = SUPER, M, exit,
+bind = SUPER, END, exit,
 bind = SUPER, Q, killactive
 bind = SUPER SHIFT, Q, exec, hyprctl kill
 bind = SUPER SHIFT, D, exec, hyprctl dispatch dpms
 bind = SUPER, ESCAPE, exec, ~/.config/scripts/wlogout.sh 
 bind = SUPER, N, exec, swaync-client -t -sw
+bind = ,Print, exec, grim -g "$(slurp)" - | wl-copy
 
 #-- OPEN APPS --#
 
@@ -70,4 +71,4 @@ bindel = SUPER SHIFT, UP, exec, pamixer -i 2
 bindel = SUPER SHIFT, down, exec, pamixer -d 2
 bindl = SUPER SHIFT, left, exec, playerctl previous
 bindl = SUPER SHIFT, right, exec, playerctl next
-bindl = SUPER SHIFT, K, exec, playerctl play-pause
+bindl = SUPER SHIFT, SPACE, exec, playerctl play-pause

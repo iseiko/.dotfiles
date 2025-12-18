@@ -1,3 +1,0 @@
-[templates.hyprland]
-input_path = "~/.dotfiles/hypr/.config/matugen/templates/hyprland/colors.conf"
-output_path = "~/.dotfiles/hypr/.config/hypr/matugen.conf"
