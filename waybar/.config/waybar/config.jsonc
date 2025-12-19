@@ -1,4 +1,5 @@
 {
+    /* --- POSITIONS AND LAYOUT CONFIG --- */
     "layer": "top",
     "exclusive": true,
     "passthrough": false,
@@ -9,6 +10,7 @@
     "margin-top": 3,
     "margin-left": 3,
     "margin-right": 3,
+    /* --- MODULES CONFIG --- */
     "modules-left": [
         "hyprland/workspaces",
         "custom/separator#line",
@@ -22,12 +24,11 @@
         "network#speed",
         "tray",
         "custom/separator#line",
-        //"pulseaudio#microphone",
         "pulseaudio",
         "custom/separator#line",
         "custom/notification"
     ],
-    /*STYLING*/
+    /* --- MODULES CONFIG --- */
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
@@ -44,7 +45,6 @@
             "default": "",
         },
     },
-    //MODULES//
     "custom/separator#line": {
         "format": "|",
         "interval": "once",
@@ -52,8 +52,7 @@
     },
     "clock": {
         "interval": 1,
-        "format": "{:%I:%M %p}", // AM PM format
-        // "format": " {:%H:%M:%S}", // 24H
+        "format": "{:%I:%M %p}",
         "format-alt": "{:%H:%M   %p     %Y,  %d  %B,  %A}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
@@ -98,10 +97,7 @@
         "on-click-right": "kitty --title btop sh -c 'btop'"
     },
     "network#speed": {
-        "interval": 1,
-        //"format": "{ifname}",
-        //"format-wifi": " U {bandwidthUpBytes} D {bandwidthDownBytes}",
-        //"format-ethernet": " U {bandwidthUpBytes} D {bandwidthDownBytes}", 
+        "interval": 1, 
         "format": "{essid}  {icon} {signalStrength}%",
         "format-disconnected": "󰌙",
         "tooltip-format": " U {bandwidthUpBytes} D {bandwidthDownBytes}",
@@ -141,19 +137,10 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        //"format-bluetooth": "{icon} 󰂰 {volume}%",
         "format-muted": "󰖁",
         "on-click": "flatpak run com.saivert.pwvucontrol",
         "on-click-right": "playerctl play-pause",
-        // "on-scroll-up": "wpctl set-volume 59 1%+",
-        // "on-scroll-down": "wpctl set-volume 59 1%-",
         "format-icons": {
-            //"headphone": "",
-            //"hands-free": "",
-            //"headset": "",
-            //"phone": "",
-            //"portable": "",
-            //"car": "",
             "default": [
                 "",
                 "",

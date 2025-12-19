@@ -1,9 +1,9 @@
-#-- MOUSE CONFIG --#
+# --- MOUSE CONFIG --- #
 
 bindm = SUPER, mouse:272, movewindow
 bindm = SUPER, mouse:273, resizewindow
 
-#-- SYSTEM BINDS --#
+# --- SYSTEM BINDS --- #
 
 bind = SUPER, L, exec, hyprlock
 bind = SUPER, R, exec, killall -SIGUSR2 waybar && swaync-client --reload-config && swaync-client --reload-css
@@ -17,15 +17,16 @@ bind = SUPER, ESCAPE, exec, ~/.config/scripts/wlogout.sh
 bind = SUPER, N, exec, swaync-client -t -sw
 bind = ,Print, exec, grim -g "$(slurp)" - | wl-copy
 
-#-- OPEN APPS --#
+# --- OPEN APPS --- #
 
 bind = SUPER, RETURN, exec, kitty
 bind = SUPER, A, exec, pkill fuzzel || fuzzel
 bind = SUPER, B, exec, zen-browser
 bind = SUPER, E, exec, kitty -e ranger
 bind = SUPER, D, exec, vesktop
+bind = SUPER SHIFT, A, exec, pkill rofi || rofi -show drun
 
-#-- WINDOW MOVE --#
+# --- WINDOW MOVE --- #
 
 bind = SUPER, W, swapsplit
 bind = SUPER SHIFT, W, togglesplit
@@ -39,7 +40,7 @@ bind = SUPER SHIFT, P, centerwindow
 bind = SUPER, F, togglefloating
 bind = SUPER SHIFT, F, fullscreen
 
-#-- WORKSAPCES --#
+# --- WORKSAPCES --- #
 
 bind = SUPER, S, togglespecialworkspace, magic
 bind = SUPER, 1, workspace, 1
@@ -65,7 +66,7 @@ bind = SUPER SHIFT, 8, movetoworkspacesilent, 8
 bind = SUPER SHIFT, 9, movetoworkspacesilent, 9
 bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
 
-#-- VOLUME --#
+# --- VOLUME --- #
 
 bindel = SUPER SHIFT, UP, exec, pamixer -i 2
 bindel = SUPER SHIFT, down, exec, pamixer -d 2

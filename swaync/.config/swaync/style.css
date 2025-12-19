@@ -7,13 +7,8 @@
     color: @color0;
 }
 
-.notification-row {
-    outline: none;
-    margin: 1px;
-    padding: 0;
-    border-radius: 10px;
-    color: @color6;
-}
+
+/* --- WORKSPACE NOTIFICATION --- */
 
 .notification {
     background: @color0;
@@ -27,6 +22,12 @@
     border: 2px solid @color6;
     margin: 0;
 }
+
+.floating-notifications {
+    background: transparent;
+}
+
+/* --- NOTIFICATIONS ON THE CONTROL CENTER --- */
 
 .close-button {
     background: @color6;
@@ -59,6 +60,22 @@
     background: @color6;
 }
 
+.notification-group {
+    background-color: @color10;
+    border: none;
+    outline: none;
+    color: @color15;
+    border-radius: 10px;
+}
+
+.notification-row {
+    outline: none;
+    margin: 1px;
+    padding: 0;
+    border-radius: 10px;
+    color: @color6;
+}
+
 .summary {
     padding-top: 7px;
     font-size: 13px;
@@ -76,6 +93,7 @@
     color: @color6;
 }
 
+/* --- CONTROL CENTER --- */
 .control-center {
     background: @color0;
     border: 2px solid @color6;
@@ -90,13 +108,12 @@
     opacity: .5;
 }
 
-.floating-notifications {
-    background: transparent;
-}
 
 .blank-window {
     background: transparent;
 }
+
+/* --- THE "NOTIFICATION CENTER" AND "CLEAR ALL" BUTTON --- */
 
 .widget-title {
     color: @color8;
@@ -115,6 +132,8 @@
     box-shadow: none;
     border-radius: 10px;
 }
+
+/* --- DO NOT DISTURB STYLE --- */
 
 .widget-dnd {
     background: @color10;
@@ -135,6 +154,8 @@
     border-radius: 8px
 }
 
+/* --- DONT REMEMBER :) --- */
+
 .widget-label {
     margin: 10px 10px 5px 10px;
 }
@@ -144,7 +165,7 @@
     color: @color6;
 }
 
-/* --- MPRIS FORCE FIX --- */
+/* --- MPRIS STYLING (THE MUSIC WIDGET) --- */
 .widget-mpris {
     color: @color6;
     background: @color10;
@@ -157,18 +178,15 @@
     padding: 15px;
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.4);
-    /* Make it transparent so blur shows through */
     border-radius: 12px;
 }
 
-/* HIDEs the Spotify Icon completely */
 .widget-mpris-player>box>image {
     opacity: 0 !important;
     -gtk-icon-size: 0px !important;
     min-width: 0px !important;
 }
 
-/* FORCES the Album Art to have a size and be visible */
 .widget-mpris-album-art {
     all: unset;
     border-radius: 10px;
@@ -195,22 +213,7 @@
     margin-left: 1px;
 }
 
-/* --- END MPRIS --- */
-
-.widget-buttons-grid {
-    font-size: x-large;
-    padding: 5px;
-    margin: 5px 10px 10px 10px;
-    border-radius: 10px;
-    background: @color10;
-}
-
-.widget-buttons-grid>flowbox>flowboxchild>button {
-    margin: 3px;
-    background: @color6;
-    border-radius: 10px;
-    color: #f9f5d7;
-}
+/* --- VOLUME WIDGET --- */
 
 .widget-volume {
     background-color: @color10;
@@ -238,10 +241,32 @@
     margin: -4px 0px;
 }
 
-.notification-group {
-    background-color: @color10;
-    border: none;
-    outline: none;
-    color: @color15;
+.widget-volume button{
+    background-color: @color6;
     border-radius: 10px;
+}
+
+/* --- CONTROL WIDGETS --- */
+
+.widget-buttons-grid {
+    font-size: x-large;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background: @color10;
+}
+
+.widget-buttons-grid :last-child {
+    margin-right: 8px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    margin: 3px;
+    background: @color6;
+    border-radius: 10px;
+    color: #f9f5d7;
+}
+
+.widget-buttons-grid :first-child {
+    margin-left: 7px;
 }

@@ -8,5 +8,5 @@ alias s=sudo
 alias n=nano
 alias pipes='pipes.sh -c 4'
 alias tty='tty-clock -c -c -C 4'
-alias cava='cava -p ~/.dotfiles/cava/config'
+alias cava='cava -p ~/.config/cava/config'
 alias shut='shutdown now'

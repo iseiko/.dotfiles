@@ -68,7 +68,7 @@
                 },
                 {
                     "label": "󰖩",
-                    "command": ""
+                    "command": "nm-connection-editor"
                 },
                 {
                     "label": "󰂯",

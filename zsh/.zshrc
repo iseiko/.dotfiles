@@ -19,3 +19,6 @@ source ~/.config/zsh/envs
 source ~/.config/zsh/hist
 source ~/.config/zsh/keybinds
 source ~/.config/zsh/plugins
+
+# Created by `pipx` on 2025-12-18 13:36:13
+export PATH="$PATH:/home/hollow/.local/bin"

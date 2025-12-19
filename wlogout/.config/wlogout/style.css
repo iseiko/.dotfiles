@@ -1,3 +1,4 @@
+/* --- GENERAL CONFIG AND BACKGROUND STYLING --- */
 @import url("colors.css");
 
 window {
@@ -6,6 +7,8 @@ window {
     color:  @foreground; /* text */
     background-color: rgba(24, 27, 32, 0.2);
 } 
+
+/* --- GENERAL BUTTON SETTINGS --- */
 
 button {
     background-repeat: no-repeat;
@@ -32,41 +35,45 @@ button:hover {
     transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
 }
 
+/* --- DEFAULT BUTTON IMAGES --- */
+
 #lock {
 	background-image: image(url("icons/lock.png"));
-}
-
-#lock:hover {
-	background-image: image(url("icons/lock-hover.png"))
 }
 
 #suspend {
 	background-image: image(url("icons/sleep.png"));
 }
 
-#suspend:hover {
-	background-image: image(url("icons/sleep-hover.png"));
-}
-
 #shutdown {
 	background-image: image(url("icons/power.png"));
-}
-
-#shutdown:hover {
-	background-image: image(url("icons/power-hover.png"));
 }
 
 #reboot {
 	background-image: image(url("icons/restart.png"));
 }
 
-#reboot:hover {
-	background-image: image(url("icons/restart-hover.png"));
-}
-
 
 #logout {
 	background-image: image(url("icons/logout.png"));
+}
+
+/* --- HOVER BUTTON IMAGES --- */
+
+#lock:hover {
+	background-image: image(url("icons/lock-hover.png"))
+}
+
+#suspend:hover {
+	background-image: image(url("icons/sleep-hover.png"));
+}
+
+#shutdown:hover {
+	background-image: image(url("icons/power-hover.png"));
+}
+
+#reboot:hover {
+	background-image: image(url("icons/restart-hover.png"));
 }
 
 #logout:hover {
