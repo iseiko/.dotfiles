@@ -59,7 +59,7 @@ Swaync
 Terminal + CLI 
 </summary>
 ![image alt](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png?raw=true)
-![cli-2](/screenshots/Pictures/screenshots/cli2.png)
+![cli-2](./screenshots/Pictures/screenshots/cli2.png)
 </details>
 
 # To do 
