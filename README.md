@@ -34,7 +34,7 @@ Waybar
 <summary>
 fuzzel
 </summary>
-![fuzzel](git/screenshots/fuzzel.png)
+![fuzzel](git/screenshots/fuzzel.png?raw=true)
 </details>
 
 <details>
