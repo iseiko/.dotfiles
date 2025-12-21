@@ -1,0 +1,78 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/arch.txt",
+        "padding": {
+	        "top": 2
+	    },
+        "color": {"1":"white"}
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+	"break",
+    "break",
+{
+            "type": "custom",
+            "format": "\u001b[90m┌────────────────────────────────────────────────────┐"
+        },
+        {
+            "type": "title",
+            "key": " user  ",
+            "keyColor": "white",
+            "color": {"user":"dim_"},
+            "format": "{user-name-colored}"
+        },
+        {
+            "type": "os",
+            "key": " os    ",
+            "keyColor": "white",
+            "outputColor": "dim_",
+        },
+        {
+            "type": "wm",
+            "key": " wm    ",
+            "keyColor": "white",
+            "outputColor": "dim_",
+        },
+        {
+            "type": "kernel",
+            "key": " kernel",
+            "keyColor": "white",
+            "outputColor": "dim_",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " pkgs  ",
+            "keyColor": "white",  
+            "outputColor": "dim_",
+        },
+        {
+            "type": "cpu",
+            "format": "   {1}", 
+            "key": " cpu",
+            "keyColor": "white",
+            "outputColor": "dim_",
+        },
+        {  
+            "type": "gpu",
+            "key": " gpu   ",
+            "keyColor": "white",
+            "outputColor": "dim_",
+            "format": "{name}",
+        },
+        {
+            "type": "memory",
+            "key": " memory",
+            "keyColor": "white",
+            "outputColor": "dim_",
+        },
+{
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+        },
+        "break",
+       ]
+}
