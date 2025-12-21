@@ -24,31 +24,42 @@
 <summary>
 Waybar
 </summary>
+![waybar1](/screenshots/Pictures/screenshots/waybar1.png)
+![waybar2](/screenshots/Pictures/screenshots/waybar2.png)
+![waybar3](/screenshots/Pictures/screenshots/waybar3.png)
+![waybar4](/screenshots/Pictures/screenshots/waybar4.png)
 </details>
 
 <details>
 <summary>
 fuzzel
 </summary>
+![fuzzel](/screenshots/Pictures/screenshots/fuzzel.png)
 </details>
 
 <details>
 <summary>
 Wlogout
 </summary>
+![wlogout1](/screenshots/Pictures/screenshots/wlogout1.png)
+![wlogout2](/screenshots/Pictures/screenshots/wlogout2.png)
 </details>
 
 <details>
 <summary>
 Swaync
 </summary>
+![swaync1](/screenshots/Pictures/screenshots/swaync1.png)
+![swaync2](/screenshots/Pictures/screenshots/swaync2.png)
+![swaync3](/screenshots/Pictures/screenshots/swaync3.png)
 </details>
 
 <details>
 <summary>
 Terminal + CLI 
 </summary>
-![CLI-1](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png)
+![CLI-1](/screenshots/Pictures/screenshots/cli1.png)
+![cli-2](/screenshots/Pictures/screenshots/cli2.png)
 </details>
 
 # To do 
