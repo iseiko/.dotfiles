@@ -15,7 +15,8 @@ bind = SUPER SHIFT, Q, exec, hyprctl kill
 bind = SUPER SHIFT, D, exec, hyprctl dispatch dpms
 bind = SUPER, ESCAPE, exec, ~/.config/scripts/wlogout.sh 
 bind = SUPER, N, exec, swaync-client -t -sw
-bind = ,Print, exec, grim -g "$(slurp)" - | wl-copy
+bind = SUPER, Print, exec, grim -g "$(slurp)" - | swappy -f - 
+bind = , Print, exec, grim - | swappy -f -
 
 # --- OPEN APPS --- #
 
