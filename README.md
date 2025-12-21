@@ -34,7 +34,7 @@ Waybar
 <summary>
 fuzzel
 </summary>
-![fuzzel](/git/screenshots/fuzzel.png)
+![fuzzel](git/screenshots/fuzzel.png)
 </details>
 
 <details>
@@ -65,7 +65,7 @@ Terminal + CLI
 # To do 
 
 - [ ] Switch to matugen or another similar tool 
-- [ ] Change fuzzel for rofi
+- [ ] Switch to rofi
 - [ ] Learn how to use and implement quickshell 
 
 # Progress 
@@ -81,6 +81,6 @@ Terminal + CLI
 
 - My friend [Ayru](https://github.com/ayrudev) for introducing me to the linux comunity and for helping me with the problems I ran into while configuring my system and learning how to manage arch
 
-- [zDyant](https://github.com/zDyant) for the inspirations on my main configs (even tough he doesn't know me)
+- [zDyant](https://github.com/zDyant) for the inspirations on my main configs 
 
 
