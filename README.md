@@ -58,7 +58,7 @@ Swaync
 <summary>
 Terminal + CLI 
 </summary>
-https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png?raw=true
+![External img](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png?raw=true)
 ![cli-2](./screenshots/Pictures/screenshots/cli2.png)
 </details>
 
