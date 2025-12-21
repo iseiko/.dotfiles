@@ -24,7 +24,7 @@
 <summary>
 Waybar
 </summary>
-![waybar1](/screenshots/Pictures/screenshots/waybar1.png)
+![waybar1](./screenshots/Pictures/screenshots/waybar1.png)
 ![waybar2](/screenshots/Pictures/screenshots/waybar2.png)
 ![waybar3](/screenshots/Pictures/screenshots/waybar3.png)
 ![waybar4](/screenshots/Pictures/screenshots/waybar4.png)
@@ -58,7 +58,7 @@ Swaync
 <summary>
 Terminal + CLI 
 </summary>
-![CLI-1](/screenshots/Pictures/screenshots/cli1.png)
+![CLI-1](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png?raw=true)
 ![cli-2](/screenshots/Pictures/screenshots/cli2.png)
 </details>
 
