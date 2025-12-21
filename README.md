@@ -21,7 +21,9 @@
 # Screenshots
 
 <details>
-<summary>Waybar</summary>
+<summary>
+Waybar
+</summary>
 
 ![waybar1](git/screenshots/waybar1.png)
 ![waybar2](git/screenshots/waybar2.png)
@@ -30,20 +32,26 @@
 </details>
 
 <details>
-<summary>fuzzel</summary>
+<summary>
+fuzzel
+</summary>
 
 ![fuzzel](git/screenshots/fuzzel.png)
 </details>
 
 <details>
-<summary>Wlogout</summary>
+<summary>
+Wlogout
+</summary>
 
 ![wlogout1](git/screenshots/wlogout1.png)
 ![wlogout2](git/screenshots/wlogout2.png)
 </details>
 
 <details>
-<summary>Swaync</summary>
+<summary>
+Swaync
+</summary>
 
 ![swaync1](git/screenshots/swaync1.png)
 ![swaync2](git/screenshots/swaync2.png)
@@ -54,8 +62,9 @@
 <summary>
 Terminal + CLI 
 </summary>
-![External img](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png?raw=true)
-![cli-2](./screenshots/Pictures/screenshots/cli2.png)
+
+![cli-1](git/screenshots/cli1.png)
+![cli-2](git/screenshots/cli2.png)
 </details>
 
 # To do 
