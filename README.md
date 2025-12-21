@@ -48,6 +48,7 @@ Swaync
 <summary>
 Terminal + CLI 
 </summary>
+![CLI-1](https://github.com/iseiko/.dotfiles.old/blob/main/Pictures/screenshots/cli1.png)
 </details>
 
 # To do 
