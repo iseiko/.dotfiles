@@ -20,6 +20,36 @@
 
 # Screenshots
 
+<details>
+<summary>
+Waybar
+</summary>
+</details>
+
+<details>
+<summary>
+fuzzel
+</summary>
+</details>
+
+<details>
+<summary>
+Wlogout
+</summary>
+</details>
+
+<details>
+<summary>
+Swaync
+</summary>
+</details>
+
+<details>
+<summary>
+Terminal + CLI 
+</summary>
+</details>
+
 # To do 
 
 - [ ] Switch to matugen or another similar tool 
