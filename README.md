@@ -7,7 +7,7 @@
 </h3>
 
 # Main configs 
-- Fuzzel (I'm switching to Rofi later)
+- Rofi
 - Waybar 
 - Wlogout
 - Swaync
@@ -33,10 +33,11 @@ Waybar
 
 <details>
 <summary>
-fuzzel
+Rofi
 </summary>
 
-![fuzzel](git/screenshots/fuzzel.png)
+![Rofi1](git/screenshots/rofi1.png)
+![Rofi2](git/screenshots/rofi2.png)
 </details>
 
 <details>
@@ -69,15 +70,15 @@ Terminal + CLI
 
 # To do 
 
+- [ ] Implement a rofi wallpaper switcher 
 - [ ] Switch to matugen or another similar tool 
-- [ ] Switch to rofi
 - [ ] Learn how to use and implement quickshell 
 
 # Progress 
 
+- [X] Switch to rofi
 - [X] Hyprland
 - [X] Hyprlock
-- [X] Fuzzel 
 - [X] Waybar
 - [X] Wlogout
 - [X] Swaync 
