@@ -225,3 +225,7 @@ tooltip label {
     min-width: 10px;
     border-radius: 5px;
 }
+
+#language {
+    padding-right: 10px;
+} 

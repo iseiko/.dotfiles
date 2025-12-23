@@ -6,7 +6,7 @@ bindm = SUPER, mouse:273, resizewindow
 # --- SYSTEM BINDS --- #
 
 bind = SUPER, L, exec, hyprlock
-bind = SUPER, R, exec, killall -SIGUSR2 waybar && swaync-client --reload-config && swaync-client --reload-css
+bind = SUPER, R, exec, killall -SIGUSR2 waybar && swaync-client --reload-config && swaync-client --reload-css && spicetify update && spicetify watch -s & sleep 1 && pkill -x spicetify
 bind = SUPER, O, exec, killall waybar || waybar
 bind = SUPER, I, exec, ~/.config/scripts/change_wallpaper.sh
 bind = SUPER, END, exit,
@@ -21,11 +21,10 @@ bind = , Print, exec, grim - | swappy -f -
 # --- OPEN APPS --- #
 
 bind = SUPER, RETURN, exec, kitty
-bind = SUPER, A, exec, pkill fuzzel || fuzzel
 bind = SUPER, B, exec, zen-browser
 bind = SUPER, E, exec, kitty -e ranger
 bind = SUPER, D, exec, vesktop
-bind = SUPER SHIFT, A, exec, pkill rofi || rofi -show drun
+bind = SUPER, A, exec, pkill rofi || rofi -show drun
 
 # --- WINDOW MOVE --- #
 

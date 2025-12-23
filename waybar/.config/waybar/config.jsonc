@@ -21,6 +21,8 @@
         "clock"
     ],
     "modules-right": [
+        "hyprland/language",
+        "custom/separator#line",
         "network#speed",
         "tray",
         "custom/separator#line",
@@ -97,7 +99,7 @@
         "on-click-right": "kitty --title btop sh -c 'btop'"
     },
     "network#speed": {
-        "interval": 1, 
+        "interval": 1,
         "format": "{essid}  {icon} {signalStrength}%",
         "format-disconnected": "󰌙",
         "tooltip-format": " U {bandwidthUpBytes} D {bandwidthDownBytes}",
@@ -155,5 +157,11 @@
     "tray": {
         "spacing": 10,
         "on-click": "kill"
+    },
+    "hyprland/language": {
+        "format": "{}", // Displays the language code (e.g., 'us', 'ru')
+        "format-en": "EN", // Custom display for English
+        "format-pt": "BR", // Custom display for Russian
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next" // Cycle layouts on click
     }
 }

@@ -1,0 +1,8 @@
+* {
+    bg: #11111bB3;    /* Transparent Slate */
+    bg-alt: #1e1e2eE6;
+    fg: #cdd6f4;
+    accent: #cba6f7;  /* Mauve/Purple accent */
+    urgent: #f38ba8;
+    select: #313244;
+}

@@ -1,0 +1,10 @@
+* {
+    bg: #121212B3;        /* Increased transparency (70%) */
+    bg-alt: #6D6252E6;
+    fg: #c3c3c3;
+    accent-trans: #958774CC;
+    accent: #958774;
+    urgent: #6D6252;
+    select: #6D6252;
+    back-image: url("/home/hollow/.dotfiles/wallpapers/Pictures/wallpapers/30.png", height);
+}
