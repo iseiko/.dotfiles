@@ -1,10 +1,10 @@
 * {
-    bg: #180f0aB3;        /* Increased transparency (70%) */
-    bg-alt: #3D4041E6;
-    fg: #c5c3c1;
-    accent-trans: #8C7454CC;
-    accent: #8C7454;
-    urgent: #3D4041;
-    select: #3D4041;
-    back-image: url("/home/hollow/.dotfiles/wallpapers/Pictures/wallpapers/32.jpg", height);
+    bg: #121212B3;        /* Increased transparency (70%) */
+    bg-alt: #6D6252E6;
+    fg: #c3c3c3;
+    accent-trans: #958774CC;
+    accent: #958774;
+    urgent: #6D6252;
+    select: #6D6252;
+    back-image: url("/home/hollow/.dotfiles/wallpapers/Pictures/wallpapers/30.png", height);
 }
