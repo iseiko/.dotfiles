@@ -85,7 +85,7 @@ Terminal + CLI
 
 # Thanks to 
 
-- My friend [Ayru](https://github.com/ayrudev) for introducing me to the linux comunity and for helping me with the problems I ran into while configuring my system and learning how to manage arch
+- My friend [Ayru](https://github.com/ayrudev) for introducing me to the linux community and for helping me with the problems I ran into while configuring my system and learning how to manage arch
 
 - [zDyant](https://github.com/zDyant) for the inspirations on my main configs 
 
