@@ -1,78 +1,140 @@
 { 
     // position and layout config
     "layer": "top",
-    "exclusive": true,
     "passthrough": false,
     "position": "top",
-    "spacing": 1,
+    "spacing": 5,
+    "height": 25,
     "fixed-center": true,
-    "ipc": true,
-    "margin-top": 3,
-    "margin-left": 3,
-    "margin-right": 3,
+    "margin-top": 4,
+    "margin-left": 4,
+    "margin-right": 4,
 
-    // modules position config
+    // modules config
 
     "modules-left": [
-        "hyprland/worksapces"
+    "group/Utilities",
+    "group/workspaces"
     ],
     "modules-center": [
-        "clock"
+    "clock"
     ],
     "modules-right": [
-        "hyprland/language",
-        "custom/separator#line",
-        "tray",
-        "custom/separator#line",
-        "pipewire"
+        "mpris",
+        "group/langvol"
     ],
 
-    // modules config 
-    "hyprland/workspaces": {
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-scroll-up": "hyprctl dispatch workspace e-1",
-        "on-click-down": "hyprctl dispatch worksapce e+1",
-        "persistent-workspaces": {
-            "*": 4
-        },
-        "format-icons": {
-            "active": "",
-            "default": ""
-        }
-    },
-    "custom/separator#line": {
-        "format": "|",
-        "interval": "once",
+    // widgets config 
+
+    "custom/openbracket": {
+        "format": "[",
         "tooltip": false
     },
-    "clock": {
-        "interval": 1,
-        "format": "{:%I:%M %p}"
+
+    "custom/closebracket": {
+        "format": "]",
+        "tooltip": false
     },
-    "pipewire": {
+
+    "group/Utilities":{
+        "orientation": "horizontal",
+        "modules":[
+            "custom/openbracket",
+            "custom/arch",
+	        "tray",
+            "custom/closebracket"
+        ]
+    },
+
+   "custom/arch": {
+         "format": "󰣇",
+	 "tooltip": false,
+         "on-click": "rofi -show drun"
+    },
+
+    "group/workspaces":{
+        "orientation": "horizontal",
+        "modules":[
+            "custom/openbracket",
+            "hyprland/workspaces",
+            "custom/closebracket"
+        ]
+    },
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "enable-bar-scroll": true,
+        "disable-scroll-wraparound": true,
+        "active-only": false,
         "format": "{icon}",
-        "format-muted": "󰖁",
-        "on-click": "flatpak run com.saivert.pwvucontrol",
-        "on-click-right": "playerctl play-pause",
         "format-icons": {
-            "default": [
-                "",
-                "",
-                "󰕾",
-                ""
-            ],
-            "ignored-sinks": [
-                "Easy Effects Sink"
-            ]
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "default": "•"
+        },
+	"persistent-workspaces": {
+            "*": 4
         }
     },
+
+    "mpris": {
+        "format": "[   {status_icon} | {dynamic} ]",
+        "interval": 1,
+        "dynamic-len": 40,
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸",
+            "stopped": ""
+        },
+        "dynamic-order": ["title"]
+    },
+
+    "clock": {
+        "format": "[ {:%I:%M} ]",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "onclick" : "kalender"
+    },
+    
     "tray": {
         "spacing": 10,
         "on-click-right": "kill"
     },
+    
+    "group/langvol": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/openbracket",
+            "hyprland/language",
+            "custom/split",
+            "wireplumber",
+            "custom/closebracket"
+        ]
+    },
+
+    "wireplumber": {
+        "scroll-step": 2,
+        "format": "{icon}{volume}%",
+        "format-bluetooth": "{icon}{volume}% ",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" :", " :", " :"]
+        },
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click": "flatpak run com.saivert.pwvucontrol"
+    },
+
     "hyprland/language": {
         "format": "{}",
         "format-en": "EN",
