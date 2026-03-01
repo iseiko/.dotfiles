@@ -1,20 +1,3 @@
-as a notification tool i can use dunst
 to install and config steam i need to edit /etc/pacman.conf 
 for neovim i need to create the config directory and install plugins 
-for the app launcher i can use rofi or omarchy default app launcher 
-for the topbar i can use a simple waybar config 
-for the wallpaper i can use wpaperd or swwww or hyprpaper 
-for the poolkit i ca use either hyprpollkit or kdepoolkit
-for network i need to install dhcpcd, iwd, networkmanager and enable them using a script
-for audio i need to use pipewire, alsa, ffmpeg, pwucontrol 
-add flatpak to apps.sh 
 
-need to edit the dunst config on a virtual machine later 
-need to edit waybar colors and layout in general
-
-
-done
-___________________________________________________
-
-installed flatpak 
-updated the waybar config

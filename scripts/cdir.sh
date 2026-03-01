@@ -20,3 +20,6 @@ stow -t ~ dunst
 stow -t ~ neovim
 stow -t ~ waybar 
 stow -t ~ wpaperd
+stow -t ~ scripts
+stow -t ~ rofi 
+stow -t ~ kew
