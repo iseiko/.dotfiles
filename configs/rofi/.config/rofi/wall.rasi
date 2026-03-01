@@ -1,0 +1,29 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+    sorting-method:              "fzf";
+    drun-display-format: 	 "{icon} {name}";
+}
+
+window {
+    width:                        900px;
+    height:                       800px;
+    border-radius:                0;
+    border:                       2px;
+}
+
+element-icon {
+    size:             180px;          
+    cursor:           inherit;
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element-text {
+    vertical-align:   0.5;           
+    cursor:           inherit;
+    background-color: transparent;
+    text-color:       inherit;
+}
