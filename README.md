@@ -13,15 +13,15 @@
 
 # Screenshots
 
-- [X] Working on it
+- [ ] Working on it
 
 # To do 
 
-- [X] Working on it
+- [ ] Working on it
 
 # Progress 
 
-- [X] Working on it
+- [ ] Working on it
 
 # Thanks to 
 
