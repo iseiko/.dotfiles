@@ -1,0 +1,6 @@
+# Steam #
+windowrule = match:float on, match:class steam, match:title "Friends List"
+windowrule = center 1, match:class steam, match:title "Friends List"
+windowrule = match:float on, match:class steam, match:title "Steam Settings"
+windowrule = center 1, match:class steam, match:title "Steam Settings"
+#layerrule = blur 1, logout_dialog

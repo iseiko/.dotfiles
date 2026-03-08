@@ -16,7 +16,7 @@ bind = SUPER, END, exec, systemctl suspend
 bind = SUPER SHIFT, D, exec, hyprctl dispatch dpms
 bind = SUPER, Print, exec, grim -g "$(slurp)" - | satty --filename - --early-exit --copy-command "wl-copy" --output-filename ~/Pictures/Screenshots/satty-$(date +'%Y%m%d-%H:%M:%S').png
 bind = , Print, exec, grim - | satty --filename - --early-exit --copy-command "wl-copy" --output-filename ~/Pictures/Screenshots/satty-$(date +'%Y%m%d-%H:%M:%S').png
-bind = SUPER, SPACE, exec, pkill rofi || rofi -show 
+bind = SUPER, SPACE, exec, pkill rofi || rofi -show
 bind = SUPER, L, exec, hyprlock
 
 # --- OPEN APPS --- #
@@ -29,8 +29,8 @@ bind = SUPER, M, exec, kitty -e kew
 
 # --- WINDOW MOVE --- #
 
-bind = SUPER, W, swapsplit
-bind = SUPER SHIFT, W, togglesplit
+bind = SUPER, W, layoutmsg, swapsplit
+bind = SUPER SHIFT, W, layoutmsg, togglesplit
 bind = SUPER, left, movefocus, l
 bind = SUPER, right, movefocus, r
 bind = SUPER, up, movefocus, u
@@ -76,8 +76,8 @@ bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
 
 # --- VOLUME --- #
 
-bindel = SUPER SHIFT, UP, exec, pamixer -i 2
-bindel = SUPER SHIFT, down, exec, pamixer -d 2
+bindel = SUPER SHIFT, UP, exec, sh -c 'pamixer -i 2; vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po "\d+(?=%)" | head -n 1); notify-send -h string:x-canonical-private-synchronous:volume -h int:value:"$vol" "Volume" "$vol%"'
+bindel = SUPER SHIFT, DOWN, exec, sh -c 'pamixer -d 2; vol=$(pactl get-sink-volume @DEFAULT_SINK@ | grep -Po "\d+(?=%)" | head -n 1); notify-send -h string:x-canonical-private-synchronous:volume -h int:value:"$vol" "Volume" "$vol%"'
 bindl = SUPER SHIFT, left, exec, playerctl previous
 bindl = SUPER SHIFT, right, exec, playerctl next
 bindl = SUPER SHIFT, SPACE, exec, playerctl play-pause

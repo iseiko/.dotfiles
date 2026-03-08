@@ -91,7 +91,8 @@
             "paused": "⏸",
             "stopped": ""
         },
-        "dynamic-order": ["title"]
+       "expand": true,
+       "dynamic-order": ["artist","title"]
     },
 
     "clock": {
