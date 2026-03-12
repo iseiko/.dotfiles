@@ -17,7 +17,8 @@
 
 # To do 
 
-- [ ] Working on it
+- [ ] Theme switcher based on rofi
+- [ ] Organize this readme
 
 # Progress 
 
