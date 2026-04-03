@@ -1,30 +1,27 @@
 { 
-    // position and layout config
     "layer": "top",
-    "passthrough": false,
     "position": "top",
     "spacing": 5,
     "height": 25,
     "fixed-center": true,
-    "margin-top": 4,
-    "margin-left": 4,
-    "margin-right": 4,
-
-    // modules config
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
 
     "modules-left": [
-    "group/Utilities",
-    "group/workspaces"
+        "group/Utilities",
+        "group/workspaces"
     ],
     "modules-center": [
-    "clock"
+        "clock"
     ],
     "modules-right": [
         "mpris",
+        "group/battery",
         "group/langvol"
     ],
 
-    // widgets config 
+    // --- WIDGETS CONFIG ---
 
     "custom/openbracket": {
         "format": "[",
@@ -36,85 +33,79 @@
         "tooltip": false
     },
 
-    "group/Utilities":{
+    "custom/split": {
+        "format": "|",
+        "tooltip": false
+    },
+
+    "group/Utilities": {
         "orientation": "horizontal",
-        "modules":[
+        "modules": [
             "custom/openbracket",
             "custom/arch",
-	        "tray",
+            "tray",
             "custom/closebracket"
         ]
     },
 
-   "custom/arch": {
-         "format": "󰣇",
-	 "tooltip": false,
-         "on-click": "rofi -show drun"
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
     },
 
-    "group/workspaces":{
+    "group/workspaces": {
         "orientation": "horizontal",
-        "modules":[
+        "modules": [
             "custom/openbracket",
             "hyprland/workspaces",
             "custom/closebracket"
         ]
     },
 
-    "hyprland/workspaces": {
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "enable-bar-scroll": true,
-        "disable-scroll-wraparound": true,
-        "active-only": false,
-        "format": "{icon}",
-        "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "default": "•"
-        },
-	"persistent-workspaces": {
-            "*": 4
-        }
+    "group/battery": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/openbracket",
+            "battery",
+            "custom/closebracket"
+        ]
     },
 
-    "mpris": {
-        "format": "[   {status_icon} | {dynamic} ]",
-        "interval": 1,
-        "dynamic-len": 40,
-        "status-icons": {
-            "playing": "▶",
-            "paused": "⏸",
-            "stopped": ""
-        },
-       "expand": true,
-       "dynamic-order": ["artist","title"]
+    "battery": {
+        "states": { "warning": 20, "critical": 10 },
+        "format": "{icon} : {capacity}%",
+        "format-charging": " : {capacity}%",
+        "format-plugged": " : {capacity}%",
+        "format-icons": ["", "", "", "", ""]
     },
 
+    // Restored Clock module with fixed calendar tooltip and click
     "clock": {
         "format": "[ {:%I:%M} ]",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "onclick" : "kalender"
     },
-    
-    "tray": {
-        "spacing": 10,
-        "on-click-right": "kill"
-    },
-    
+
     "group/langvol": {
         "orientation": "horizontal",
         "modules": [
             "custom/openbracket",
             "hyprland/language",
             "custom/split",
+            "backlight",
+            "custom/split",
             "wireplumber",
             "custom/closebracket"
         ]
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} : {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "swayosd-client --brightness raise",
+        "on-scroll-down": "swayosd-client --brightness lower"
     },
 
     "wireplumber": {
@@ -134,6 +125,21 @@
         },
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click": "flatpak run com.saivert.pwvucontrol"
+    },
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "format": "{icon}",
+        "persistent-workspaces": { "*": 4 }
+    },
+
+    "mpris": {
+        "format": "[   {status_icon} | {dynamic} ]",
+        "status-icons": { "playing": "▶", "paused": "⏸", "stopped": "" }
+    },
+    
+    "tray": {
+        "spacing": 10
     },
 
     "hyprland/language": {

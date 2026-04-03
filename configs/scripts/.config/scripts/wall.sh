@@ -8,7 +8,7 @@ SELECTION=$(find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -ina
 [ -z "$SELECTION" ] && exit
 FULL_PATH="$WALL_DIR/$SELECTION"
 
-convert $FULL_PATH ~/Pictures/Wallpapers/.Current/current.png
+convert $FULL_PATH ~/Pictures/.Current/current.png
 
 pkill wpaperd
 wpaperd &

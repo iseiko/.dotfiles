@@ -1,29 +1,83 @@
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
-
 configuration {
-    modi:                        "drun";
-    show-icons:                  true;
-    sorting-method:              "fzf";
-    drun-display-format: 	 "{icon} {name}";
+    modi: "dmenu";
+    show-icons: true;
+    sorting-method: "fzf";
+    dmenu-display-format: "{icon} {name}";
+    font: "Iosevka Nerd Font 12";
+}
+
+* {
+    bg: #282828;
+    fg: #ebdbb2;
+    border-col: #504945;
+    accent: #fe8019;
+    selected-bg: #3c3836;
+    background-color: transparent;
+    text-color: @fg;
 }
 
 window {
-    width:                        900px;
-    height:                       800px;
-    border-radius:                0;
-    border:                       2px;
+    height: 700px;
+    border: 2px;
+    border-color: @fg;
+    background-color: @bg;
+    padding: 15px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    margin: 0 0 15px 0;
+}
+
+prompt {
+    font: "Iosevka Nerd Font Bold 12";
+    text-color: @fg;
+}
+
+entry {
+    placeholder: " Search...";
+    placeholder-color: @fg;
+    margin: 0 0 0 10px;
+}
+
+listview {
+    fixed-height: false;
+    scrollbar: false;
+    spacing: 8px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @border-col; 
+    text-color:       @fg;
+}
+
+/* This handles the highlighted row */
+element selected.normal {
+    background-color: @selected-bg;
+    text-color:       @accent;
+}
+
+element {
+    padding: 10px;
+    border-radius: 4px;
+    spacing: 15px;
+    children: [ element-icon, element-text ];
 }
 
 element-icon {
-    size:             180px;          
-    cursor:           inherit;
+    size: 180px;
+    cursor: inherit;
     background-color: transparent;
-    text-color:       inherit;
 }
 
 element-text {
-    vertical-align:   0.5;           
-    cursor:           inherit;
+    vertical-align: 0.5;
+    cursor: inherit;
     background-color: transparent;
-    text-color:       inherit;
+    text-color: inherit;
 }

@@ -9,7 +9,7 @@ bind = SUPER, I, exec, sh ~/.config/scripts/wall.sh
 
 # --- SYSTEM BINDS --- #
 
-bind = SUPER SHIFT, END, exec, sh ./.config/scripts/menu.sh
+bind = SUPER, Escape, exec,  sh ~/.config/scripts/menu.sh
 bind = SUPER, Q, killactive
 bind = SUPER SHIFT, Q, exec, hyprctl kill
 bind = SUPER, END, exec, systemctl suspend
@@ -23,7 +23,7 @@ bind = SUPER, K, exec, rofimoji
 # --- OPEN APPS --- #
 
 bind = SUPER, RETURN, exec, kitty
-bind = SUPER, B, exec, firefox
+bind = SUPER, B, exec, zen-browser
 bind = SUPER, E, exec, kitty -e yazi
 bind = SUPER, D, exec, vesktop
 bind = SUPER, M, exec, kitty -e kew
@@ -75,12 +75,20 @@ bind = SUPER SHIFT, 8, movetoworkspacesilent, 8
 bind = SUPER SHIFT, 9, movetoworkspacesilent, 9
 bind = SUPER SHIFT, 0, movetoworkspacesilent, 10
 
+# --- BRIGHTNESS --- #
+
+bindel = , XF86MonBrightnessUp, exec, swayosd-client --brightness raise
+bindel = , XF86MonBrightnessDown, exec, swayosd-client --brightness lower
+
 # --- VOLUME --- #
 
-bindel = SUPER SHIFT, UP, exec, pamixer -i 2
-bindel = SUPER SHIFT, DOWN, exec, pamixer -d 2
+bindel = , XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2
+bindel = , XF86AudioLowerVolume, exec, swayosd-client --output-volume -2
+bindl  = , XF86AudioMute, exec, swayosd-client --output-volume mute-toggle
+bindl = , XF86AudioPlay, exec, playerctl play-pause
 bindl = SUPER SHIFT, left, exec, playerctl previous
 bindl = SUPER SHIFT, right, exec, playerctl next
-bindl = ,PAUSE, exec, playerctl play-pause
 
-bind = SUPER, Tab, hyprexpo:expo, toggle
+# --- TEMPORARY BINDS FOR CONFIG --- #
+
+bind = SUPER SHIFT, R, exec, pkill waybar || waybar

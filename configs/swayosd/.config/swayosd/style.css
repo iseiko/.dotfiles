@@ -1,0 +1,23 @@
+window {
+    background: rgba(40, 40, 40, 0.9); /* Gruvbox bg0 */
+    border-radius: 10px;
+    border: 2px solid #ebdbb2;        /* Gruvbox fg */
+}
+
+#container {
+    margin: 16px;
+}
+
+progress {
+    background: #504945;              /* Gruvbox bg2 */
+    color: #fabd2f;                   /* Gruvbox Yellow */
+    border-radius: 5px;
+    min-height: 16px;
+}
+
+label {
+    color: #ebdbb2;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
