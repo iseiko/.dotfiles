@@ -1,6 +1,8 @@
 exec-once = systemctl --user start hyprpolkitagent
+exec-once = hyprpm reload -n
 exec-once = waybar
 exec-once = dunst
 exec-once = wpaperd
+exec-once = hypridle
 
 
