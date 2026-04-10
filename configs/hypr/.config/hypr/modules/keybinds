@@ -23,7 +23,7 @@ bind = SUPER, K, exec, rofimoji
 # --- OPEN APPS --- #
 
 bind = SUPER, RETURN, exec, kitty
-bind = SUPER, B, exec, zen-browser
+bind = SUPER, B, exec, firefox
 bind = SUPER, E, exec, kitty -e yazi
 bind = SUPER, D, exec, vesktop
 bind = SUPER, M, exec, kitty -e kew

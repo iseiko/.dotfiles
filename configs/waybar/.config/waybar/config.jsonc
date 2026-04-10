@@ -17,7 +17,7 @@
     ],
     "modules-right": [
         "mpris",
-        "group/battery",
+        // "group/battery",
         "group/langvol"
     ],
 
@@ -92,8 +92,8 @@
         "modules": [
             "custom/openbracket",
             "hyprland/language",
-            "custom/split",
-            "backlight",
+            //"custom/split",
+            //"backlight",
             "custom/split",
             "wireplumber",
             "custom/closebracket"
@@ -101,7 +101,7 @@
     },
 
     "backlight": {
-        "device": "intel_backlight",
+        "device": "amd_backlight",
         "format": "{icon} : {percent}%",
         "format-icons": ["󰃞", "󰃟", "󰃠"],
         "on-scroll-up": "swayosd-client --brightness raise",
@@ -134,7 +134,7 @@
     },
 
     "mpris": {
-        "format": "[   {status_icon} | {dynamic} ]",
+        "format": "[   {status_icon} | {title} ]",
         "status-icons": { "playing": "▶", "paused": "⏸", "stopped": "" }
     },
     

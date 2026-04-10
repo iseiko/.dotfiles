@@ -17,7 +17,8 @@ configuration {
 }
 
 window {
-    height: 700px;
+    width: 500px;
+    height: 780px;
     border: 2px;
     border-color: @fg;
     background-color: @bg;
@@ -70,7 +71,7 @@ element {
 }
 
 element-icon {
-    size: 180px;
+    size: 200px;
     cursor: inherit;
     background-color: transparent;
 }

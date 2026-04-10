@@ -9,14 +9,14 @@ SELECTED="#3c3836"
 
 # Define the options with icons
 # Format: "Icon  Name"
-options="󰈆  Logout\n󰐥  Shutdown\n󰜉  Reboot\n󰤄  Suspend\n󰒲  Hibernate"
+options="󰌪  Power-Saver\n󰗑  Balanced\n󰓅  Performance"
 
 # Run Rofi with the icon-enabled theme
-chosen=$(printf "$options" | rofi -dmenu -i -p "󰐥 System" \
+chosen=$(printf "$options" | rofi -dmenu -i -p "󱐋 Power Profiles:" \
   -theme-str "
 window {
     width: 300px;
-    height: 480px; 
+    height: 300px; 
     border: 2px;
     border-color: $FG;
     background-color: $BG;
@@ -62,10 +62,8 @@ element-text {
 
 # The case statement ignores the icons for the logic check
 case "$chosen" in
-*"Logout"*) hyprctl dispatch exit ;;
-*"Shutdown"*) systemctl poweroff ;;
-*"Reboot"*) systemctl reboot ;;
-*"Suspend"*) systemctl suspend ;;
-*"Hibernate"*) systemctl hibernate ;;
+*"Power-Saver"*) powerprofilesctl set power-saver && notify-send "power profile set to power-saver" ;;
+*"Balanced"*) powerprofilesctl set balanced && notify-send "power profile set to balanced" ;;
+*"Performance"*) powerprofilesctl set performance && notify-send "Power profile set to performance" ;;
 esac
 
