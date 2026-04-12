@@ -3,4 +3,4 @@
 show_percentage = true
 
 # Optional: Path to your custom style (if not in the default location)
-style = "~/.config/swayosd/colors.css"
+# style = "~/.config/swayosd/colors.css"
