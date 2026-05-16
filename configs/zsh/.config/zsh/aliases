@@ -9,6 +9,7 @@ alias gm="git commit -m"
 alias gp="git push"
 alias ..="cd .."
 alias .="cd -"
+alias softreboot="sudo systemctl soft-reboot"
 alias nv=nvim
 alias pipes='pipes.sh -c 4'
 alias tty='tty-clock -c -c -C 4'
