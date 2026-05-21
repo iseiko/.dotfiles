@@ -14,3 +14,4 @@ alias nv=nvim
 alias pipes='pipes.sh -c 4'
 alias tty='tty-clock -c -c -C 4'
 alias shut='shutdown now'
+alias wallog='sqlite3 ~/.local/share/wallpaper_logs.db "SELECT * FROM wallpaper_changes ORDER BY changed_at DESC LIMIT 10;"'
